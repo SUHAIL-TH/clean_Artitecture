@@ -7,6 +7,7 @@ import { PrismaLogbookRepository } from "./infrastructure/PrismaLogbookRepositor
 import { GetLogbookController } from "./presentation/GetLogbookController"
 import { GetLogbookUseCase } from "./application/GetLogbookUseCase"
 
+//all the call is making from here
 export async function main(): Promise<void> {
   const client = new PrismaClient()
   const prismaRepo = new PrismaLogbookRepository(client)
