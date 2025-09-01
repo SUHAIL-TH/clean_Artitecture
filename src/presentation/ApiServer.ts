@@ -2,6 +2,8 @@ import express from 'express'
 import { CreateLogbookController } from './CreateLogbookController'
 import { GetLogbookController } from './GetLogbookController'
 
+
+// here we are creating the server
 export class ApiServer {
   public static async run(port: number, controller: CreateLogbookController, getController: GetLogbookController): Promise<void> {
     const app = express()
