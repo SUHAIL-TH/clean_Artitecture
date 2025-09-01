@@ -14,6 +14,8 @@ export class PrismaLogbookRepository implements ILogbookRepository {
       }
     })
 
+
+    
     if(!result) return result;
 
     return new Logbook(result.name, result.userId, result.id)
